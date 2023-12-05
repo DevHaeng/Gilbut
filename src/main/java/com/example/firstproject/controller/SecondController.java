@@ -21,7 +21,7 @@ public class SecondController {
                         "-데모스테네스-"
         };
         int randInt = (int) (Math.random() * quotes.length);
-        model.addAttribute("",quotes[randInt]);
-        return "";
+        model.addAttribute("randomQuote",quotes[randInt]);
+        return "quote";
     }
 }
